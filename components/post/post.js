@@ -8,10 +8,10 @@ import styles from './post.module.css'
 
 const CustomLink = ({ as, href, ...otherProps }) => {
   return (
-    <Link as={as} href={href}>
-      <a {...otherProps} />
-    </Link>
-  )
+    (<Link as={as} href={href} {...otherProps}>
+
+    </Link>)
+  );
 }
 
 const CustomImage = ({ src, caption, ...otherProps }) => {

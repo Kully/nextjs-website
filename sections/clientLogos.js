@@ -26,15 +26,16 @@ const clientLogoInfo = [
   },
   {
     label: 'Deloitte',
-    image: '/images/clients/logo-deloitte.svg',
+    image: '/images/clients/logo-deloitte2.png',
     link: 'https://www2.deloitte.com/ca/en/pages/about-deloitte/articles/home.html?icid=site_selector_ca',
   },
 ]
+// width="100%" height="100%"
 
 function displayClientLogo(ClientLogo, i) {
   let image = null
   if (ClientLogo.image) {
-    image = <Image src={ClientLogo.image} width="100%" height="100%" layout="responsive" objectFit="contain" />
+    image = <Image src={ClientLogo.image} width="100" height="100" layout="responsive" objectFit="contain" />
   } else {
     image = <PlaceholderClientLogo />
   }

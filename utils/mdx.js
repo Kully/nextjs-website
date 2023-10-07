@@ -49,7 +49,7 @@ export const getAllPostData = (category) => {
         ...data,
       },
       slug: slug,
-    }
+    };
   })
 
   // sort posts by date
@@ -102,5 +102,5 @@ export const getSinglePostData = async (category, slug) => {
       ...frontmatter,
     },
     code: code,
-  }
+  };
 }
