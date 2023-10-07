@@ -12,15 +12,15 @@ const PostListItem = ({ category, post, index }) => {
   }
 
   return (
-    <Link key={index} href={`/${category}/${post.slug}`}>
-      <a className={styles.link}>
-        <div className={styles.item}>
-          <div className={styles.image}>{image}</div>
-          <Frontmatter frontmatter={post.frontmatter} />
-        </div>
-      </a>
-    </Link>
-  )
+    (<Link key={index} href={`/${category}/${post.slug}`} className={styles.link}>
+
+      <div className={styles.item}>
+        <div className={styles.image}>{image}</div>
+        <Frontmatter frontmatter={post.frontmatter} />
+      </div>
+
+    </Link>)
+  );
 }
 
 const PostList = ({ category, posts }) => (

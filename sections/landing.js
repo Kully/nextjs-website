@@ -17,8 +17,11 @@ const Landing = () => (
         <br />
         <br />
         <h2>
-          <Link href="#contact">
-            <a id="cta-button-landing-page" className="cta-button-landing-page">Get in touch</a>
+          <Link
+            href="#contact"
+            id="cta-button-landing-page"
+            className="cta-button-landing-page">
+            Get in touch
           </Link>
         </h2>
       </div>

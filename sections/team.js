@@ -50,7 +50,7 @@ function displayTeamCard(TeamCard, i) {
     icons.push(
       <div style={{ paddingRight: '1em' }} key={1}>
         <Link href={TeamCard.icons.github}>
-          <a>GitHub</a>
+          GitHub
         </Link>
       </div>,
     )
@@ -59,7 +59,7 @@ function displayTeamCard(TeamCard, i) {
     icons.push(
       <div key={2}>
         <Link href={TeamCard.icons.linkedin}>
-          <a>LinkedIn</a>
+          LinkedIn
         </Link>
       </div>,
     )

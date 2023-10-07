@@ -52,13 +52,13 @@ const Layout = (props) => {
   const [showModal, setShowModal] = useState(false)
 
   const logoContent = (
-    <Link href="/">
-      <a>
-        <div className={styles.logo}>
-          <Image src={'/images/logos/logo-name-black.svg'} layout="fill" objectFit="contain" objectPosition="left" />
-        </div>
-      </a>
-    </Link>
+    (<Link href="/">
+
+      <div className={styles.logo}>
+        <Image src={'/images/logos/logo-name-black.svg'} layout="fill" objectFit="contain" objectPosition="left" />
+      </div>
+
+    </Link>)
   )
 
   const navContent = (
@@ -66,8 +66,8 @@ const Layout = (props) => {
       <ul>
         {NavLinkInfo.map((navLink, i) => (
           <li key={i}>
-            <Link href={navLink.path}>
-              <a onClick={() => setShowModal(false)}>{navLink.name}</a>
+            <Link href={navLink.path} onClick={() => setShowModal(false)}>
+              {navLink.name}
             </Link>
           </li>
         ))}
