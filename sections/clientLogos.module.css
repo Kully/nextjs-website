@@ -1,18 +1,18 @@
 .cardList {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 4rem;
   margin: 30px 0 0 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 965px) {
   .cardList {
     grid-template-columns: repeat(1, 1fr);
     gap: 50px;
   }
 }
 
-.dimCard, .card {
+.trendlineCard, .dimCard, .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,5 +30,9 @@
 }
 
 .dimCard {
+  opacity: 0.7;
+}
+
+.trendlineCard {
   opacity: 0.7;
 }

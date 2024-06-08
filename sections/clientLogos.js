@@ -6,6 +6,11 @@ import styles from './clientLogos.module.css'
 
 const clientLogoInfo = [
   {
+    label: 'Deloitte',
+    image: '/images/clients/deloitte-logo-black-alt.png',
+    link: 'https://www2.deloitte.com/ca/en/pages/about-deloitte/articles/home.html?icid=site_selector_ca',
+  },
+  {
     label: 'Trendline',
     image: '/images/clients/logo-trendline.png',
     link: 'https://www.trendlineinsights.com/',
@@ -26,9 +31,9 @@ const clientLogoInfo = [
     link: 'https://www.hnts.org/',
   },
   {
-    label: 'Deloitte',
-    image: '/images/clients/deloitte-logo-black-alt.png',
-    link: 'https://www2.deloitte.com/ca/en/pages/about-deloitte/articles/home.html?icid=site_selector_ca',
+    label: 'GMet',
+    image: '/images/clients/logo-gmet.png',
+    link: 'https://generalmetabolics.com/',
   },
 ]
 
@@ -43,6 +48,10 @@ function displayClientLogo(ClientLogo, i) {
   let cardStyle;
   if (ClientLogo.label == "Deloitte") {
     cardStyle = styles.dimCard;
+  }
+  else if (ClientLogo.label == "Trendline")
+  {
+    cardStyle = styles.trendlineCard;
   }
   else {
     cardStyle = styles.card;
