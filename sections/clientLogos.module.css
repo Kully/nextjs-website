@@ -5,6 +5,7 @@
   margin: 30px 0 0 0;
 }
 
+/* inclusive: 768px - 965px */
 @media only screen and (max-width: 965px) {
   .cardList {
     grid-template-columns: repeat(1, 1fr);
@@ -17,7 +18,7 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-  max-height: 80px;
+/*  max-height: 80px;*/
 
   /* IE6-9 */
   filter: gray;
