@@ -13,7 +13,10 @@ import Script from 'next/script'
 import { getAllPostData } from '../utils/mdx'
 
 export const getStaticProps = async () => {
-  const portfolioPosts = getAllPostData('portfolio')
+  const portfolioPosts = getAllPostData('portfolio').filter(
+    // covid 19 app temporarily hidden from carousel
+    (post) => post.slug !== 'a-covid-app'
+  )
   return {
     props: {
       portfolioPosts,
