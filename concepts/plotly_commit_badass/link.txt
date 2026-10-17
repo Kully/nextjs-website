@@ -1,0 +1,1 @@
+https://github.com/plotly/plotly.py/graphs/contributors?from=1%2F2%2F2016&to=9%2F28%2F2018
