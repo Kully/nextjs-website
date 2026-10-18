@@ -555,45 +555,6 @@ img {
   gap: 8px 20px;
 }
 
-.human-note__open {
-  position: fixed;
-  right: 16px;
-  bottom: 16px;
-  z-index: 20;
-  width: 44px;
-  height: 44px;
-  border: 1px solid var(--color-line);
-  border-radius: 50%;
-  background: var(--color-surface);
-  color: var(--color-ink);
-  font: inherit;
-  font-size: 1.25rem;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.human-note {
-  max-width: 360px;
-  padding: 28px;
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius);
-  background: var(--color-surface);
-  color: var(--color-ink);
-}
-
-.human-note::backdrop {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.human-note__title {
-  margin: 0 0 8px;
-  font-family: var(--font-display);
-}
-
-.human-note__text {
-  margin: 0 0 20px;
-}
-
 @media (min-width: 720px) {
   :root {
     --gutter: 32px;
