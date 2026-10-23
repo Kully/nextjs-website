@@ -289,7 +289,7 @@ img {
   margin: 0;
   padding: 0 12px;
   list-style: none;
-  animation: marquee-scroll 45s linear infinite;
+  animation: marquee-scroll 90s linear infinite;
 }
 
 .marquee__viewport:hover .marquee__track {
