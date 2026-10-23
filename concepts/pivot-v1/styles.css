@@ -161,10 +161,19 @@ img {
 }
 
 .hero {
+  position: relative;
   padding: 48px 0 56px;
 }
 
+.hero__waves {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
 .hero__inner {
+  position: relative;
+  z-index: 1;
   display: grid;
   gap: 40px;
 }
