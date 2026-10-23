@@ -51,7 +51,7 @@ const GLYPH_FONT = 'ui-monospace, SFMono-Regular, Menlo, Consolas, monospace';
 const ATLAS_TILE = 128;
 const WAVE_UNIT = 520;
 const RIPPLE_CELL = 8;
-const RIPPLE_RATE = 60;
+const RIPPLE_RATE = 30;
 const PIXEL_BUDGET = 4.5e6;
 const INTRO_SECONDS = 2;
 

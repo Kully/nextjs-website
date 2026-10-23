@@ -87,6 +87,12 @@ img {
   text-underline-offset: 3px;
 }
 
+.cta__text .link {
+  text-decoration: underline;
+  text-decoration-color: #330f05;
+  color: #330f05;
+}
+
 .button {
   display: inline-block;
   white-space: nowrap;
