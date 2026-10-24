@@ -8,6 +8,7 @@
   <meta name="color-scheme" content="light dark">
   <link rel="icon" href="../../public/images/logos/logo-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="border-glow.css">
 </head>
 <body>
   <header class="site-header">
@@ -19,8 +20,9 @@
         </picture>
       </a>
       <nav class="site-header__nav" aria-label="Primary">
-        <a class="site-header__link" href="#work">How we could work together</a>
-        <a class="site-header__link" href="#stories">Success stories</a>
+        <a class="site-header__link" href="#purpose">Purpose</a>
+        <a class="site-header__link" href="#work">Services</a>
+        <a class="site-header__link" href="#stories">Happy Clients</a>
         <a class="site-header__link" href="#about">About</a>
       </nav>
       <a class="button button--small" href="https://calendly.com/adam-zyphr/discovery" target="_blank" rel="noopener">Book a discovery call</a>
@@ -40,27 +42,13 @@
             <a class="button button--ghost" href="#stories">See success stories</a>
           </div>
         </div>
-        <figure class="hero__visual" aria-label="Scattered data points becoming a clear chart">
-          <svg class="chart" viewBox="0 0 520 300" role="img" aria-labelledby="chart-title">
-            <title id="chart-title">Scattered, noisy data on the left becomes a clear bar and line chart on the right</title>
-            <g class="chart__noise">
-              <circle cx="22" cy="60" r="4"/><circle cx="48" cy="210" r="4"/><circle cx="70" cy="110" r="4"/>
-              <circle cx="96" cy="250" r="4"/><circle cx="110" cy="40" r="4"/><circle cx="130" cy="170" r="4"/>
-              <circle cx="152" cy="90" r="4"/><circle cx="34" cy="150" r="4"/><circle cx="84" cy="180" r="4"/>
-              <circle cx="140" cy="230" r="4"/><circle cx="60" cy="30" r="4"/><circle cx="118" cy="120" r="4"/>
-              <circle cx="20" cy="260" r="4"/><circle cx="160" cy="150" r="4"/><circle cx="100" cy="80" r="4"/>
-            </g>
-            <path class="chart__arrow" d="M180 150 H236 M224 138 L238 150 L224 162" fill="none"/>
-            <line class="chart__axis" x1="270" y1="260" x2="506" y2="260"/>
-            <rect class="chart__bar" x="282" y="190" width="30" height="70"/>
-            <rect class="chart__bar" x="326" y="160" width="30" height="100"/>
-            <rect class="chart__bar" x="370" y="140" width="30" height="120"/>
-            <rect class="chart__bar chart__bar--hot" x="414" y="90" width="30" height="170"/>
-            <rect class="chart__bar" x="458" y="110" width="30" height="150"/>
-            <polyline class="chart__line" fill="none" points="297,170 341,138 385,112 429,60 473,84"/>
-            <circle class="chart__dot" cx="429" cy="60" r="6"/>
-            <text class="chart__label" x="429" y="40" text-anchor="middle">The signal</text>
-          </svg>
+        <figure class="hero__visual carousel" aria-label="Examples of dashboards we have built">
+          <div class="carousel__frame">
+            <img class="carousel__slide is-active" src="../../public/images/portfolio/hero-ai2.png" alt="Issue identification tool showing underperforming wind and solar assets" width="1600" height="848">
+            <img class="carousel__slide" src="../../public/images/portfolio/hero-diff_analysis.png" alt="Differential analysis tool for metabolomic data" width="1600" height="685" loading="lazy">
+            <img class="carousel__slide" src="../../public/images/portfolio/hero-solar_app.png" alt="Solar fleet dashboard showing availability and insolation KPIs" width="1600" height="779" loading="lazy">
+          </div>
+          <div class="carousel__progress" aria-hidden="true"><div class="carousel__bar"></div></div>
         </figure>
       </div>
     </section>
@@ -87,7 +75,7 @@
       </div>
     </section>
 
-    <section class="section section--narrow" id="mission">
+    <section class="section section--narrow" id="purpose">
       <div class="container">
         <p class="eyebrow">Our Purpose</p>
         <p class="statement">Finding insights you didn't even know existed</p>
@@ -97,7 +85,7 @@
     <section class="section section--tint" id="work">
       <div class="container">
         <p class="eyebrow">Our Services</p>
-        <h2 class="section__title">How we could work together</h2>
+        <h2 class="section__title section__title--rotating">Together we could <span class="rotator" aria-live="polite"><span class="rotator__text">create report templates that get investors to fund your projects</span></span></h2>
         <div class="grid grid--three">
           <article class="card">
             <h3 class="card__title">Dash Apps</h3>
@@ -239,5 +227,8 @@
   <script src="commits-data.js"></script>
   <script src="commits-chart.js"></script>
   <script type="module" src="hero-waves.js"></script>
+  <script src="hero-carousel.js"></script>
+  <script src="rotating-title.js"></script>
+  <script src="border-glow.js"></script>
 </body>
 </html>
