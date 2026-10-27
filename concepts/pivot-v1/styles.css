@@ -263,13 +263,13 @@ img {
   }
 }
 
-.marquee {
+.logos {
   padding: 28px 0;
   border-top: 1px solid var(--color-line);
   border-bottom: 1px solid var(--color-line);
 }
 
-.marquee__title {
+.logos__title {
   margin: 0 0 16px;
   color: var(--color-muted);
   font-size: 0.8125rem;
@@ -279,49 +279,29 @@ img {
   text-transform: uppercase;
 }
 
-.marquee__viewport {
+.logos__list {
   display: flex;
-  overflow: hidden;
-  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-}
-
-.marquee__track {
-  display: flex;
-  flex-shrink: 0;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
-  gap: 24px;
-  min-width: 100%;
+  justify-content: center;
+  gap: 24px 48px;
   margin: 0;
-  padding: 0 12px;
+  padding: 0 24px;
   list-style: none;
-  animation: marquee-scroll 90s linear infinite;
 }
 
-.marquee__viewport:hover .marquee__track {
-  animation-play-state: paused;
-}
-
-.marquee__item {
+.logos__item {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 180px;
   height: 72px;
-  padding: 14px 20px;
-  border-radius: 10px;
-  background: #ffffff;
 }
 
-.marquee__item img {
+.logos__item img {
   max-height: 100%;
   object-fit: contain;
-}
-
-@keyframes marquee-scroll {
-  to {
-    transform: translateX(-100%);
-  }
+  filter: brightness(0) invert(1);
 }
 
 .section {
@@ -718,14 +698,6 @@ img {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
-  }
-
-  .marquee__viewport {
-    overflow-x: auto;
-  }
-
-  .marquee__track {
-    animation: none;
   }
 
   .button {
