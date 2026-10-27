@@ -1,6 +1,6 @@
 /**
  * Cycles the hero screenshots. Each slide runs for the duration of the
- * progress bar animation (4s); the next slide fades in when it ends.
+ * progress bar animation (8s); the next slide fades in when it ends.
  */
 (() => {
   const root = document.querySelector('.carousel');

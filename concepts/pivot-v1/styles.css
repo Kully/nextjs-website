@@ -255,7 +255,7 @@ img {
 }
 
 .carousel__bar.is-running {
-  animation: carousel-progress 4s linear forwards;
+  animation: carousel-progress 8s linear forwards;
 }
 
 @keyframes carousel-progress {
