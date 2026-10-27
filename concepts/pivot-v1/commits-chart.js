@@ -78,7 +78,7 @@ const buildOptions = (colors, reduceMotion) => ({
       border: { display: false, dash: [4, 4] },
       grid: { color: colors.grid, tickBorderDash: [4, 4] },
       ticks: { color: colors.text },
-      title: { display: true, text: 'Commits per month', color: colors.text },
+      title: { display: true, text: 'Commits', color: colors.text },
     },
   },
 });
