@@ -54,11 +54,6 @@
     card.style.setProperty('--cursor-angle', `${(angle + 360) % 360}deg`);
   };
 
-  const lightQuery = window.matchMedia('(prefers-color-scheme: dark)');
-  const syncTheme = () => {
-    cards.forEach((card) => card.classList.toggle('border-glow-card--light', !lightQuery.matches));
-  };
-
   cards.forEach((card) => {
     const inner = document.createElement('div');
     inner.className = 'border-glow-inner';
@@ -71,7 +66,4 @@
     setColorVars(card);
     card.addEventListener('pointermove', (event) => handlePointerMove(card, event));
   });
-
-  syncTheme();
-  lightQuery.addEventListener('change', syncTheme);
 })();

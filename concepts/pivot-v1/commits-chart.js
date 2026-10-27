@@ -124,8 +124,6 @@ const initCommitsChart = () => {
     },
     options: buildOptions(colors, reduceMotion),
   });
-
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => applyColors(chart));
 };
 
 initCommitsChart();
