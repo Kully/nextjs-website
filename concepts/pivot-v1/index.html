@@ -202,8 +202,35 @@
     <section class="cta">
       <div class="container cta__inner">
         <h2 class="cta__title">Get in touch</h2>
-        <p class="cta__text">If you're curious about seeing how we could work together, feel free to get in touch with Adam by sending him an email at <a class="link" href="mailto:adam@zyphr.ca">adam@zyphr.ca</a> or booking a discovery call.</p>
-        <a class="button button--inverse" href="https://calendly.com/adam-zyphr/discovery" target="_blank" rel="noopener">Book a discovery call</a>
+        <p class="cta__text">If you're curious about seeing how we could work together, feel free to get in touch with Adam by sending him an email at <a class="link" href="mailto:adam@zyphr.ca">adam@zyphr.ca</a> or <a class="link" href="https://calendly.com/adam-zyphr/discovery" target="_blank" rel="noopener">booking a discovery call</a>.</p>
+        <form class="contact-form" data-access-key="d6fb5d66-b121-4395-889a-f0ddfe8207dc">
+          <div class="contact-form__row">
+            <label class="contact-form__field">
+              <span class="contact-form__label">Name</span>
+              <input class="contact-form__control" type="text" name="name" autocomplete="name" required>
+            </label>
+            <label class="contact-form__field">
+              <span class="contact-form__label">Email</span>
+              <input class="contact-form__control" type="email" name="email" autocomplete="email" required>
+            </label>
+          </div>
+          <label class="contact-form__field">
+            <span class="contact-form__label">What is this about?</span>
+            <select class="contact-form__control" name="inquiry" required>
+              <option value="" selected disabled>Choose one</option>
+              <option value="Collaboration">Collaboration</option>
+              <option value="Consultation">Consultation</option>
+              <option value="Appreciation">Appreciation</option>
+            </select>
+          </label>
+          <label class="contact-form__field">
+            <span class="contact-form__label">Message</span>
+            <textarea class="contact-form__control" name="message" rows="5" required></textarea>
+          </label>
+          <input class="contact-form__honeypot" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="button button--inverse" type="submit">Send message</button>
+          <p class="contact-form__status" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>
@@ -227,5 +254,6 @@
   <script src="hero-carousel.js"></script>
   <script src="rotating-title.js"></script>
   <script src="border-glow.js"></script>
+  <script src="contact-form.js"></script>
 </body>
 </html>

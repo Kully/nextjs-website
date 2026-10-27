@@ -580,6 +580,64 @@ img {
   font-size: 1.125rem;
 }
 
+.contact-form {
+  display: grid;
+  gap: 16px;
+  max-width: 34em;
+  margin: 0 auto 24px;
+  text-align: left;
+}
+
+.contact-form__row {
+  display: grid;
+  gap: 16px;
+}
+
+.contact-form__field {
+  display: grid;
+  gap: 6px;
+}
+
+.contact-form__label {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.contact-form__control {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid var(--color-surface);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--color-surface);
+  font: inherit;
+}
+
+.contact-form__control:focus-visible {
+  outline: 3px solid var(--color-accent-ink);
+  outline-offset: 2px;
+}
+
+.contact-form__honeypot {
+  position: absolute;
+  left: -9999px;
+}
+
+.contact-form .button {
+  justify-self: start;
+}
+
+.contact-form .button:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.contact-form__status {
+  min-height: 1.5em;
+  margin: 0;
+  font-weight: 700;
+}
+
 .site-footer {
   padding: 28px 0;
 }
@@ -602,6 +660,10 @@ img {
 }
 
 @media (min-width: 720px) {
+  .contact-form__row {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .section__title--rotating {
     min-height: calc(1.15em * 3);
   }
