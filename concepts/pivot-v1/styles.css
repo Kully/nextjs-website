@@ -116,6 +116,12 @@ img {
   font-size: 0.9375rem;
 }
 
+.button--pill {
+  background: #385363;
+  border-color: #385363;
+  color: #ffffff;
+}
+
 .button--ghost {
   background: transparent;
   color: var(--color-ink);
