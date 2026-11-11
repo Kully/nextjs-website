@@ -390,27 +390,6 @@ img {
   margin-top: 16px;
 }
 
-.section__title--rotating {
-  min-height: calc(1.15em * 5);
-}
-
-.rotator {
-  color: var(--color-ink);
-  text-decoration: underline;
-  text-decoration-color: var(--color-accent);
-  text-decoration-skip-ink: none;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 6px;
-}
-
-.rotator__text {
-  transition: opacity 0.4s ease;
-}
-
-.rotator__text.is-hidden {
-  opacity: 0;
-}
-
 .statement {
   max-width: 30em;
   margin: 0;
@@ -792,10 +771,6 @@ img {
     grid-template-columns: 1fr 1fr;
   }
 
-  .section__title--rotating {
-    min-height: calc(1.15em * 3);
-  }
-
   :root {
     --gutter: 32px;
   }
@@ -845,7 +820,6 @@ img {
   }
 
   .carousel__slide,
-  .rotator__text,
   .story-waves {
     transition: none;
   }
