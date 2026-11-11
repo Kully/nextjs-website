@@ -24,6 +24,7 @@
   color-scheme: dark;
   --color-bg: #101317;
   --color-surface: #191e24;
+  --color-commits-surface: #101112;
   --color-tint: #151a1f;
   --color-ink: #f1eee6;
   --color-muted: #a2abb4;
@@ -604,7 +605,7 @@ img {
   padding: 16px;
   border: 1px solid var(--color-line);
   border-radius: var(--radius);
-  background: var(--color-surface);
+  background: var(--color-commits-surface);
 }
 
 .commits__header {
@@ -653,7 +654,7 @@ img {
 .commits__plot {
   position: relative;
   min-width: 0;
-  height: 85px;
+  height: 120px;
   margin-top: 12px;
 }
 
