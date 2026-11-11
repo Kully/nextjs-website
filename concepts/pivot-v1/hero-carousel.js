@@ -1,6 +1,7 @@
 /**
  * Cycles the hero screenshots. Each slide runs for the duration of the
  * progress bar animation (8s); the next slide fades in when it ends.
+ * Clicking the frame pauses or resumes the progress bar, and so the slideshow.
  */
 (() => {
   const root = document.querySelector('.carousel');
@@ -24,6 +25,20 @@
     slides[current].classList.add('is-active');
     restartBar();
   };
+
+  const frame = root.querySelector('.carousel__frame');
+  const togglePaused = () => {
+    const paused = root.classList.toggle('is-paused');
+    frame.setAttribute('aria-pressed', String(paused));
+    frame.setAttribute('aria-label', paused ? 'Play slideshow' : 'Pause slideshow');
+  };
+
+  frame.addEventListener('click', togglePaused);
+  frame.addEventListener('keydown', (event) => {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    event.preventDefault();
+    togglePaused();
+  });
 
   bar.addEventListener('animationend', () => show((current + 1) % slides.length));
   restartBar();

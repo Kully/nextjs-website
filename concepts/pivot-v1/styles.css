@@ -216,6 +216,41 @@ img {
   border-radius: 8px;
 }
 
+.carousel__frame {
+  cursor: pointer;
+}
+
+.carousel__state {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: rgba(16, 19, 23, 0.85);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.carousel__state-icon {
+  display: block;
+  fill: currentColor;
+}
+
+.carousel.is-paused .carousel__state {
+  opacity: 1;
+}
+
+.carousel.is-paused .carousel__bar {
+  animation-play-state: paused;
+}
+
 .carousel__slide {
   position: absolute;
   inset: 0;
@@ -731,6 +766,24 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 20px;
+}
+
+.site-footer__icon {
+  display: inline-flex;
+  opacity: 0.8;
+  transition: opacity 0.15s ease;
+}
+
+.site-footer__icon:hover,
+.site-footer__icon:focus-visible {
+  opacity: 1;
+}
+
+.site-footer__icon img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
 }
 
 @media (min-width: 720px) {

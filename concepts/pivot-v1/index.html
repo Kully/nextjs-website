@@ -40,10 +40,11 @@
           </div>
         </div>
         <figure class="hero__visual carousel" aria-label="Examples of dashboards we have built">
-          <div class="carousel__frame">
+          <div class="carousel__frame" role="button" tabindex="0" aria-pressed="false" aria-label="Pause slideshow">
             <img class="carousel__slide is-active" src="../../public/images/portfolio/hero-ai2.png" alt="Issue identification tool showing underperforming wind and solar assets" width="1600" height="848">
             <img class="carousel__slide" src="../../public/images/portfolio/hero-diff_analysis.png" alt="Differential analysis tool for metabolomic data" width="1600" height="685" loading="lazy">
             <img class="carousel__slide" src="../../public/images/portfolio/hero-solar_app.png" alt="Solar fleet dashboard showing availability and insolation KPIs" width="1600" height="779" loading="lazy">
+            <span class="carousel__state" aria-hidden="true"><svg class="carousel__state-icon" viewBox="0 0 24 24" width="28" height="28"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg></span>
           </div>
           <div class="carousel__progress" aria-hidden="true"><div class="carousel__bar"></div></div>
         </figure>
@@ -194,7 +195,7 @@
             <img class="case-study__image" src="../../public/images/portfolio/case-ai2.png" alt="Issue identification tool for wind and solar assets" width="1600" height="685" loading="lazy">
             <div class="case-study__body">
               <h3 class="case-study__title">Finding the worst actors across a wind/solar fleet</h3>
-              <p>Site engineers had no clear view of where and why revenue was being lost across inverters, combiners, weather stations and turbines. I led the design, front-end build and project management of an internal diagnostic tool that has surfaced around $100,000 per year in issues and prompted 35+ reported performance issues and tickets.</p>
+              <p>Site engineers had no clear view of where and why revenue was being lost across inverters, combiners, weather stations and turbines. We led the design, front-end build and project management of an internal diagnostic tool that has surfaced around $100,000 per year in issues and prompted 35+ reported performance issues and tickets.</p>
             </div>
           </article>
           <article class="case-study">
@@ -202,7 +203,7 @@
             <img class="case-study__image" src="../../public/images/portfolio/case-diff_analysis.png" alt="Differential analysis tool for metabolomic data" width="1600" height="685" loading="lazy">
             <div class="case-study__body">
               <h3 class="case-study__title">Metabolomic scenarios for scientists and researchers</h3>
-              <p>Researchers needed a way to run analyses on their metabolomic data. I designed and developed the Differential Analysis Tool, which is actively maintained and used by leading academic and BioPharma institutions, including multinational Pharma companies.</p>
+              <p>Researchers needed a way to run analyses on their metabolomic data. We designed and developed the Differential Analysis Tool, which is actively maintained and used by leading academic and BioPharma institutions, including multinational Pharma companies.</p>
             </div>
           </article>
         </div>
@@ -281,8 +282,8 @@
     <div class="container site-footer__inner">
       <p class="site-footer__copy">&copy; Zyphr Solutions Inc.</p>
       <nav class="site-footer__links" aria-label="Contact and social">
-        <a class="link" href="https://www.linkedin.com/company/zyphr-solutions-inc/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="link" href="https://github.com/zyphr-solutions/" target="_blank" rel="noopener">GitHub</a>
+        <a class="site-footer__icon" href="https://www.linkedin.com/company/zyphr-solutions-inc/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="../../public/images/icons/social-linkedin.svg" alt="" width="24" height="24"></a>
+        <a class="site-footer__icon" href="https://github.com/zyphr-solutions/" target="_blank" rel="noopener" aria-label="GitHub"><img src="../../public/images/icons/social-github.svg" alt="" width="24" height="24"></a>
       </nav>
     </div>
   </footer>
