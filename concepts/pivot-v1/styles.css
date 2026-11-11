@@ -303,6 +303,28 @@ img {
   padding: 80px 0;
 }
 
+.section--waves {
+  position: relative;
+}
+
+.section--waves > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.story-waves {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1.6s ease;
+}
+
+.story-waves.is-visible {
+  opacity: 1;
+}
+
 .section--tint {
   background: var(--color-tint);
 }
@@ -769,7 +791,8 @@ img {
   }
 
   .carousel__slide,
-  .rotator__text {
+  .rotator__text,
+  .story-waves {
     transition: none;
   }
 }

@@ -136,6 +136,8 @@ void main() {
     fade = smoothstep(0.0, uFadeSize, uv.y);
   } else if (uFade == 4) {
     fade = smoothstep(0.0, uFadeSize, 1.0 - uv.y);
+  } else if (uFade == 5) {
+    fade = smoothstep(0.0, uFadeSize, uv.y) * smoothstep(0.0, uFadeSize, 1.0 - uv.y);
   }
 
   float reach = length(css - 0.5 * uSize) / max(0.5 * length(uSize), 1.0);
