@@ -143,30 +143,14 @@ img {
   justify-content: space-between;
   gap: 16px;
   min-height: 64px;
-}
-
-.site-header__logo {
-  display: block;
-  width: 120px;
-  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .site-header__nav {
-  display: none;
-}
-
-.site-header__link {
-  color: var(--color-accent);
-  white-space: nowrap;
-  font-size: 0.8125rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.site-header__link:hover {
-  color: var(--color-ink);
+  display: flex;
+  flex: 1;
+  min-width: 0;
 }
 
 .hero {
@@ -739,11 +723,6 @@ img {
 }
 
 @media (min-width: 960px) {
-  .site-header__nav {
-    display: flex;
-    gap: 28px;
-  }
-
   .hero {
     padding: 80px 0 88px;
   }

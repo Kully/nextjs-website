@@ -9,20 +9,20 @@
   <link rel="icon" href="../../public/images/logos/logo-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="border-glow.css">
+  <link rel="stylesheet" href="pill-nav.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container site-header__inner">
-      <a class="site-header__brand" href="#top" aria-label="Zyphr home">
-        <img class="site-header__logo" src="../../public/images/logos/logo-name-white.svg" alt="Zyphr" width="152" height="38">
-      </a>
-      <nav class="site-header__nav" aria-label="Primary">
-        <a class="site-header__link" href="#purpose">About</a>
-        <a class="site-header__link" href="#work">Services</a>
-        <a class="site-header__link" href="#stories">Testimonials</a>
-        <a class="site-header__link" href="#case-studies">Case Studies</a>
-        <a class="site-header__link" href="#about">Team</a>
-      </nav>
+      <div class="site-header__nav">
+        <nav id="pill-nav" aria-label="Primary" data-logo-src="../../public/images/logos/logo-icon-black.png" data-logo-href="#top" data-logo-alt="Zyphr home">
+          <a href="#purpose">About</a>
+          <a href="#work">Services</a>
+          <a href="#stories">Testimonials</a>
+          <a href="#case-studies">Case Studies</a>
+          <a href="#about">Team</a>
+        </nav>
+      </div>
       <a class="button button--small" href="https://calendly.com/adam-zyphr/discovery" target="_blank" rel="noopener">Book a discovery call</a>
     </div>
   </header>
@@ -284,6 +284,7 @@
   <script src="commits-chart.js"></script>
   <script type="module" src="hero-waves.js"></script>
   <script src="hero-carousel.js"></script>
+  <script src="pill-nav.js"></script>
   <script src="rotating-title.js"></script>
   <script src="border-glow.js"></script>
   <script src="contact-form.js"></script>
