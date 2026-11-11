@@ -2,7 +2,6 @@ const ROTATOR_PHRASES = [
   'create report templates that get investors to fund your projects',
   'explore your large datasets to gain key business insights',
   'visualize your architecture portfolio to start sparking interest',
-  'create a VFX plugin for your favourite workflow',
 ];
 const ROTATOR_INTERVAL_MS = 3500;
 const ROTATOR_FADE_MS = 400;
