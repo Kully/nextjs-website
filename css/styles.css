@@ -499,6 +499,7 @@ img {
 }
 
 .story__quote {
+  flex: 1;
   margin: 0;
   padding: 28px;
   border-left: 4px solid var(--color-accent);
@@ -812,6 +813,7 @@ img {
     --gutter: 32px;
   }
 
+  .grid--one,
   .grid--two {
     grid-template-columns: repeat(2, 1fr);
   }
