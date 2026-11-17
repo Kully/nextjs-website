@@ -1,0 +1,14 @@
+{
+  "name": "zyphr-website",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "build": "node scripts/build-case-studies.mjs"
+  },
+  "devDependencies": {
+    "marked": "^18.2.1"
+  }
+}
