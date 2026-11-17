@@ -911,9 +911,12 @@ img {
   line-height: 1.7;
 }
 
+.case-page__body h1,
 .case-page__body h2,
-.case-page__body h3 {
+.case-page__body h3,
+.case-page__body h4 {
   margin: 40px 0 12px;
+  font-family: var(--font-display);
   line-height: 1.25;
 }
 
