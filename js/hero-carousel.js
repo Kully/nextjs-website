@@ -9,7 +9,10 @@
 
   const slides = [...root.querySelectorAll('.carousel__slide')];
   const bar = root.querySelector('.carousel__bar');
-  if (slides.length < 2 || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (slides.length < 2 || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    root.querySelector('.carousel__dots')?.setAttribute('hidden', '');
+    return;
+  }
 
   let current = 0;
 
@@ -19,12 +22,20 @@
     bar.classList.add('is-running');
   };
 
+  const dots = [...root.querySelectorAll('.carousel__dot')];
+
   const show = (index) => {
     slides[current].classList.remove('is-active');
+    dots[current]?.classList.remove('is-active');
+    dots[current]?.removeAttribute('aria-current');
     current = index;
     slides[current].classList.add('is-active');
+    dots[current]?.classList.add('is-active');
+    dots[current]?.setAttribute('aria-current', 'true');
     restartBar();
   };
+
+  dots.forEach((dot, index) => dot.addEventListener('click', () => show(index)));
 
   const frame = root.querySelector('.carousel__frame');
   const togglePaused = () => {
