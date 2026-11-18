@@ -14,7 +14,7 @@
   --color-chart-grid: #d9d3c4;
   --color-added: #1f8a3b;
   --color-removed: #c9372c;
-  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   --font-display: Georgia, "Times New Roman", serif;
   --radius: 14px;
   --gutter: 16px;
@@ -787,7 +787,17 @@ img {
 
 .site-footer__copy {
   margin: 0;
-  color: var(--color-muted);
+  color: #aaa;
+  font-family: var(--font-body);
+  font-weight: 100;
+}
+
+.site-footer__disclaimer {
+  margin: 20px 0 0;
+  color: #aaa;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 100;
 }
 
 .site-footer__links {
