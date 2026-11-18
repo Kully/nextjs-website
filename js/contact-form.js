@@ -21,7 +21,7 @@
       ...data,
       access_key: form.dataset.accessKey,
       from_name: 'Zyphr website',
-      subject: `Zyphr inquiry: ${data.inquiry} - ${data.name}`,
+      subject: `Zyphr inquiry: ${data.industry} - ${data.name}`,
     };
   };
 
