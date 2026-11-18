@@ -36,3 +36,28 @@ python3 -m http.server 8000
 ```
 
 Then open http://localhost:8000. Re-run `npm run build` after changing any case study. The build rewrites the card section of `index.html` between the `case-studies:start` and `case-studies:end` comments, so commit that change.
+
+## Compressing portfolio videos
+
+Source recordings (`.mov`) are not committed. Convert them to web formats with ffmpeg and save the outputs in `public/images/portfolio/`. Both commands scale to 1920 px wide (height is kept proportional and even), drop to 30 fps and strip the audio. Omit `scale=1920:-2` if the source is already narrower than 1920 px, to avoid upscaling.
+
+```bash
+cd public/images/portfolio
+
+# MP4 (H.264): plays in every browser
+ffmpeg -i "input.mov" -vf "fps=30,scale=1920:-2" -c:v libx264 -crf 28 -preset slow -pix_fmt yuv420p -an -movflags +faststart output.mp4
+
+# WebM (VP9): modern browsers
+ffmpeg -i "input.mov" -vf "fps=30,scale=1920:-2" -c:v libvpx-vp9 -crf 35 -b:v 0 -row-mt 1 -an output.webm
+```
+
+- Lower `-crf` for higher quality and larger files, raise it for the reverse.
+- `+faststart` lets the MP4 begin playing before it fully downloads.
+- Use both files in the page so the browser picks the first it supports:
+
+```html
+<video autoplay muted loop playsinline>
+  <source src="output.webm" type="video/webm">
+  <source src="output.mp4" type="video/mp4">
+</video>
+```
