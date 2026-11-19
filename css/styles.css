@@ -574,14 +574,31 @@ img {
   letter-spacing: 0.08em;
 }
 
-.case-study__image {
+.case-study__media {
+  position: relative;
+  -webkit-mask-image: linear-gradient(to bottom, #000 35%, transparent);
+  mask-image: linear-gradient(to bottom, #000 35%, transparent);
+}
+
+.case-study__image,
+.case-study__video {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   object-position: top;
-  -webkit-mask-image: linear-gradient(to bottom, #000 35%, transparent);
-  mask-image: linear-gradient(to bottom, #000 35%, transparent);
+}
+
+.case-study__video {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.case-study__video--playing {
+  opacity: 1;
 }
 
 .case-study__body {

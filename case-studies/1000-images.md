@@ -2,6 +2,7 @@
 title: 1000 Images in a Dash
 text-preview: How we quickly developed a prototype where you can scrub through 1000 MRI images instantaneously.
 image-preview: public/images/portfolio/ucsd.png
+video-preview: public/images/portfolio/ucsd-web.mp4
 page-url: 1000-images-ucsd
 year: 2021
 ---

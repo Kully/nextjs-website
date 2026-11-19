@@ -2,6 +2,7 @@
 title: COVID-19 Interventions
 text-preview: Learn how we built an MVP app to simulate the impact of custom non-pharmaceutical interventions on the dynamics of COVID-19 for Google.
 image-preview: public/images/portfolio/a-covid-app.png
+video-preview: public/images/portfolio/covid-app-cut.mp4
 page-url: mvp-for-google
 year: 2020
 ---

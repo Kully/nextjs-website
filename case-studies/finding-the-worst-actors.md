@@ -2,6 +2,7 @@
 title: Finding the worst actors across a wind/solar fleet
 text-preview: Read how we helped site engineers be able to quickly and easily detect issue anomaly across their fleets of turbines, inverters, combiners, and weather stations. $100,000 per year in issues and prompted 35+ reported performance issues and tickets.
 image-preview: public/images/portfolio/case-ai2.png
+video-preview: public/images/portfolio/solar-app.mp4
 page-url: finding-the-worst-actors
 year: 2026
 ---

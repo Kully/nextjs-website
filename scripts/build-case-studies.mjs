@@ -92,6 +92,7 @@ const loadCaseStudies = async () => {
       title: fields.title,
       preview: fields['text-preview'],
       image: toRootPath(fields['image-preview']),
+      video: fields['video-preview'] ? toRootPath(fields['video-preview']) : '',
       year: fields.year ?? '',
       body,
     });
@@ -106,8 +107,13 @@ const loadCaseStudies = async () => {
  */
 const renderCard = (study) => {
   const year = study.year ? `\n            <span class="case-study__year">${escapeHtml(study.year)}</span>` : '';
+  const video = study.video
+    ? `\n              <video class="case-study__video" src="${escapeHtml(study.video)}" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>`
+    : '';
   return `          <a class="case-study" href="/case-studies/${study.slug}/">${year}
-            <img class="case-study__image" src="${escapeHtml(study.image)}" alt="" width="1600" height="685" loading="lazy">
+            <div class="case-study__media">
+              <img class="case-study__image" src="${escapeHtml(study.image)}" alt="" width="1600" height="685" loading="lazy">${video}
+            </div>
             <div class="case-study__body">
               <h3 class="case-study__title">${escapeHtml(study.title)}</h3>
               <p>${escapeHtml(study.preview)}</p>
