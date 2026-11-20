@@ -6,7 +6,8 @@
     "node": "22.x"
   },
   "scripts": {
-    "build": "node scripts/build-case-studies.mjs"
+    "build": "node scripts/build-case-studies.mjs",
+    "build:hero-video": "node scripts/build-hero-video.mjs"
   },
   "devDependencies": {
     "marked": "^18.2.1"

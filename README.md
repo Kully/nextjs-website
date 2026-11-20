@@ -61,3 +61,7 @@ ffmpeg -i "input.mov" -vf "fps=30,scale=1920:-2" -c:v libvpx-vp9 -crf 35 -b:v 0 
   <source src="output.mp4" type="video/mp4">
 </video>
 ```
+
+## Regenerating the hero video
+
+The landing page hero plays `public/images/portfolio/hero-reel.mp4` / `.webm`, spliced from the case study videos. To change which clips, lengths or fit are used, edit the `CLIPS` and `OUTPUT` constants at the top of `scripts/build-hero-video.mjs`, then run `npm run build:hero-video` (needs ffmpeg). Commit the regenerated files; Vercel does not build them. The previous image carousel is kept in `archive/hero-carousel/` with restore steps.

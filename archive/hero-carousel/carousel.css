@@ -1,0 +1,111 @@
+.carousel__frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.carousel__frame {
+  cursor: pointer;
+}
+
+.carousel__state {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: rgba(16, 19, 23, 0.85);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.carousel__state-icon {
+  display: block;
+  fill: currentColor;
+}
+
+.carousel.is-paused .carousel__state {
+  opacity: 1;
+}
+
+.carousel.is-paused .carousel__bar {
+  animation-play-state: paused;
+}
+
+.carousel__slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.carousel__slide.is-active {
+  opacity: 1;
+}
+
+.carousel__progress {
+  height: 2px;
+  margin-top: 12px;
+  background: var(--color-line);
+}
+
+.carousel__dots {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.carousel__dot {
+  box-sizing: content-box;
+  width: 8px;
+  height: 8px;
+  padding: 8px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--color-line);
+  background-clip: content-box;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.carousel__dot:hover,
+.carousel__dot.is-active {
+  background-color: var(--color-muted);
+  background-clip: content-box;
+}
+
+.carousel__dot:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: -2px;
+}
+
+.carousel__bar {
+  height: 100%;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.carousel__bar.is-running {
+  animation: carousel-progress 8s linear forwards;
+}
+
+@keyframes carousel-progress {
+  to {
+    transform: scaleX(1);
+  }
+}
+

@@ -46,25 +46,11 @@
             <a class="button button--ghost" href="#case-studies">See success stories</a>
           </div>
         </div>
-        <figure class="hero__visual carousel" aria-label="Examples of dashboards we have built">
-          <div class="carousel__frame" role="button" tabindex="0" aria-pressed="false" aria-label="Pause slideshow">
-            <img class="carousel__slide is-active" src="public/images/portfolio/hero-ai2.png" alt="Issue identification tool showing underperforming wind and solar assets" width="1600" height="848">
-            <img class="carousel__slide" src="public/images/portfolio/hero-solar_app.png" alt="Solar fleet dashboard showing availability and insolation KPIs" width="1600" height="779" loading="lazy">
-            <img class="carousel__slide" src="public/images/portfolio/hero-diff_analysis.png" alt="Differential analysis tool for metabolomic data" width="1600" height="685" loading="lazy">
-            <img class="carousel__slide" src="public/images/portfolio/nyc-app.png" alt="NYC app dashboard" width="1838" height="894" loading="lazy">
-            <img class="carousel__slide" src="public/images/portfolio/a-covid-app.png" alt="COVID dashboard app" width="3360" height="1876" loading="lazy">
-            <img class="carousel__slide" src="public/images/portfolio/admin-app.png" alt="Admin app" width="1839" height="876" loading="lazy">
-            <span class="carousel__state" aria-hidden="true"><svg class="carousel__state-icon" viewBox="0 0 24 24" width="28" height="28"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg></span>
-          </div>
-          <div class="carousel__progress" aria-hidden="true"><div class="carousel__bar"></div></div>
-          <div class="carousel__dots" role="group" aria-label="Choose slide">
-            <button class="carousel__dot is-active" type="button" aria-label="Show slide 1" aria-current="true"></button>
-            <button class="carousel__dot" type="button" aria-label="Show slide 2"></button>
-            <button class="carousel__dot" type="button" aria-label="Show slide 3"></button>
-            <button class="carousel__dot" type="button" aria-label="Show slide 4"></button>
-            <button class="carousel__dot" type="button" aria-label="Show slide 5"></button>
-            <button class="carousel__dot" type="button" aria-label="Show slide 6"></button>
-          </div>
+        <figure class="hero__visual hero__reel" aria-label="Examples of dashboards we have built">
+          <video class="hero__reel-video" autoplay muted loop playsinline preload="metadata" poster="public/images/portfolio/hero-reel-poster.jpg" aria-label="Short reel of dashboards we have built" width="1280" height="720">
+            <source src="public/images/portfolio/hero-reel.webm" type="video/webm">
+            <source src="public/images/portfolio/hero-reel.mp4" type="video/mp4">
+          </video>
         </figure>
       </div>
     </section>
@@ -73,10 +59,11 @@
       <p class="logos__title">The Company We Keep</p>
       <ul class="logos__list">
         <li class="logos__item"><img src="public/images/clients/deloitte-logo-black-alt.png" alt="Deloitte" loading="lazy"></li>
+        <li class="logos__item logos__item--plotly"><img src="public/images/clients/logo-plotly.png" alt="Plotly" loading="lazy"></li>
         <li class="logos__item"><img src="public/images/clients/logo-trendline-white.png" alt="TrendLine" loading="lazy"></li>
         <li class="logos__item"><img src="public/images/clients/logo-ct.png" alt="CarbonTracker" loading="lazy"></li>
         <li class="logos__item"><img src="public/images/clients/logo-his.png" alt="Healthcare Integrative Solutions" loading="lazy"></li>
-        <!-- <li class="logos__item"><img src="public/images/clients/logo-hnts.png" alt="Home Nursing and Therapy Services" loading="lazy"></li> -->
+        <li class="logos__item"><img src="public/images/clients/logo-hnts.png" alt="Home Nursing and Therapy Services" loading="lazy"></li>
         <li class="logos__item"><img src="public/images/clients/logo-gmet.png" alt="General Metabolics" loading="lazy"></li>
         <li class="logos__item logos__item--stacked"><img src="public/images/clients/logo-southernco.png" alt="Southern Company" loading="lazy"></li>
       </ul>
@@ -348,7 +335,7 @@
   <script src="js/commits-data.js"></script>
   <script src="js/commits-chart.js"></script>
   <script type="module" src="js/hero-waves.js"></script>
-  <script src="js/hero-carousel.js"></script>
+  <script src="js/hero-reel.js"></script>
   <script src="js/pill-glide.js"></script>
   <script src="js/pill-nav.js"></script>
   <script src="js/border-glow.js"></script>
