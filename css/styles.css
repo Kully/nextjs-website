@@ -212,6 +212,13 @@ img {
   background: var(--color-surface);
 }
 
+.hero__reel {
+  transform: perspective(1200px);
+  transform-origin: center;
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+}
+
 .hero__reel-video {
   display: block;
   width: 100%;
