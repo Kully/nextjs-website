@@ -9,3 +9,12 @@
 
 /node_modules
 /.next/
+
+# generated case study pages (source markdown stays tracked)
+/case-studies/*/
+
+# the todo list of tasks that keeps changing
+todo.md
+
+# a folder that contains uncompressed and original movies/images that are not ready for committing
+/public/images/portfolio/_ignore/
