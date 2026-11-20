@@ -166,12 +166,6 @@ img {
   padding: 48px 0 56px;
 }
 
-.hero__waves {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-
 .hero__inner {
   position: relative;
   z-index: 1;
@@ -286,28 +280,6 @@ img {
 
 .section--narrow {
   padding: 80px 0;
-}
-
-.section--waves {
-  position: relative;
-}
-
-.section--waves > .container {
-  position: relative;
-  z-index: 1;
-}
-
-.story-waves {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 1.6s ease;
-}
-
-.story-waves.is-visible {
-  opacity: 1;
 }
 
 .section--tint {
@@ -812,10 +784,6 @@ img {
   }
 
   .button {
-    transition: none;
-  }
-
-  .story-waves {
     transition: none;
   }
 }
